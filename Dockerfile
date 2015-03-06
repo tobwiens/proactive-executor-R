@@ -19,7 +19,7 @@ RUN ["/bin/bash", "-c", "echo \"install.packages(c('rJava','gtools', 'codetools'
 
 
 # Install all packages important for executing the task
-RUN ["/bin/bash", "-c", "echo \"install.packages(c('e1071','lubridate','xts','scatterplot3d','Metrics','caret','kernlab','nnet','quantmod'), repos='http://cran.univ-paris1.fr/',lib='/usr/local/lib/R/site-library', dependencies=TRUE)\" | sudo R --no-save"]
+RUN ["/bin/bash", "-c", "echo \"install.packages(c('rgl','e1071','lubridate','xts','scatterplot3d','Metrics','caret','kernlab','nnet','quantmod'), repos='http://cran.univ-paris1.fr/',lib='/usr/local/lib/R/site-library', dependencies=TRUE)\" | sudo R --no-save"]
 
 ENV R_HOME /usr/lib/R
 WORKDIR /data/context
