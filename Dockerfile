@@ -11,8 +11,8 @@ sudo apt-get install r-base \
 
 RUN ["/bin/bash", "-c", "sudo apt-get install r-cran-rjava -y"]
 
-# Install mysql dev and mesa commond dev (GL/gl.h) for R packages
-RUN ["/bin/bash", "-c", "sudo apt-get install libmysqlclient-dev libglu1-mesa-dev -y"]
+# Install mysql dev and mesa commond dev (GL/glu.h) for R packages
+RUN ["/bin/bash", "-c", "sudo apt-get install libmysqlclient-dev libglu1-mesa-dev mesa-common-dev freeglut3-dev -y"]
 
 # Install packages needed for proactive-tutorial
 RUN ["/bin/bash", "-c", "echo \"install.packages(c('rJava','gtools', 'codetools', 'stringr'), repos='http://cran.univ-paris1.fr/',lib='/usr/local/lib/R/site-library', dependencies=TRUE) \" | sudo R --no-save"] 
