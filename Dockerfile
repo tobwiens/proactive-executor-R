@@ -1,5 +1,5 @@
 # Run on top of java 7
-FROM java:openjdk-7
+FROM dockerfile/java:openjdk-7-jdk
 MAINTAINER Tobias Wiens <tobwiens@gmail.com>
 
 # Install R
