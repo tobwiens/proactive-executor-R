@@ -1,5 +1,5 @@
 # Run on top of java 7
-FROM tobwiens/proactive-docker
+FROM java:openjdk-7
 MAINTAINER Tobias Wiens <tobwiens@gmail.com>
 
 # Install R
