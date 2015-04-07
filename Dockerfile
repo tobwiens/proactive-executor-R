@@ -27,5 +27,5 @@ ENV R_HOME /usr/lib/R
 WORKDIR /data/context
 
 #Add Multi-Node support - add mpirun
-RUN ["/bin/bash/", "-c", "sudo apt-get install openmpi-bin -y"]
+RUN ["/bin/bash", "-c", "sudo apt-get install openmpi-bin -y"]
   
